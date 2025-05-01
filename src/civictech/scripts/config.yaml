@@ -1,0 +1,20 @@
+data:
+  raw_csv_path: "data/Louisville_Metro_KY_-_Open_Data_Data_Set_Inventory_Updated_for_2019.csv"
+  cleaned_csv_path: "artifacts/cleaned/cleaned_dataset.csv"
+
+columns:
+  drop: ["End_Date", "Start_Date"]
+
+fillna:
+  Brief_Description_of_Data: "No description provided"
+  Data_Source: "Unknown"
+  Time_Span: "Unknown"
+  Home_Department_Division: "Unspecified"
+  Data_Steward__Business__Name: "Not listed"
+  Data_Custodian__Technical__Name: "Not listed"
+  Link_to_Existing_Publication: "No link available"
+
+analysis:
+  input_path: artifacts/cleaned/cleaned_dataset.csv
+  visuals_output_dir: artifacts/visuals
+
